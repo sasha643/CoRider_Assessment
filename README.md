@@ -84,6 +84,9 @@ The API will be running on http://localhost:5000. You can use tools like Postman
 
 **GET** `http://127.0.0.1:5000/api/users`
 
+- **Response**
+  ![GET /api/users/<user_id>](get_user.png)
+
 **POST** `http://127.0.0.1:5000/api/users`
 
 - **Request Payload**:
