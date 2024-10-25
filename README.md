@@ -81,3 +81,7 @@ The API will be running on http://localhost:5000. You can use tools like Postman
 **Authentication**
 
 - POST /api/login: Obtain a JWT token for access to protected routes.
+
+## API Testing with Postman
+
+#### GET /api/users
