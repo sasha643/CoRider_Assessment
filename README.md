@@ -1,4 +1,4 @@
-# User Management API
+![image](https://github.com/user-attachments/assets/48cb66d1-8df0-4705-9dd0-13100f114a01)# User Management API
 
 ![Python Version](https://img.shields.io/badge/python-3.9-blue) ![Flask Version](https://img.shields.io/badge/flask-2.0.3-orange)
 
@@ -84,4 +84,67 @@ The API will be running on http://localhost:5000. You can use tools like Postman
 
 ## API Testing with Postman
 
-#### GET /api/users
+**GET** `http://127.0.0.1:5000/api/users`
+
+**POST** `http://127.0.0.1:5000/api/users`
+
+- **Request Payload**:
+    ```json
+    {
+      "name": "Saurabh Sharma",
+      "password": "Saurabhs@1211",
+      "email": "sasharma643@gmail.com"
+    }
+    ```
+    
+**POST** `http://127.0.0.1:5000/api/login`
+
+- **Request Payload**:
+    ```json
+    {
+      "password": "Saurabhs@1211",
+      "email": "sasharma643@gmail.com"
+    }
+    ```
+
+**GET** `http://127.0.0.1:5000/api/users/<user_id>`
+
+- **Authorization**: Bearer token is required for this request.
+  
+  - **Example Request**: 
+    ```http
+    GET http://127.0.0.1:5000/api/users/671b703750c06c3a75325d32
+    ```
+    
+  - **Headers**:
+    ```http
+    Authorization: Bearer <your_access_token>
+    ```
+
+**PUT** `http://127.0.0.1:5000/api/users/<user_id>`
+
+- **Authorization**: Bearer token is required for this request.
+  
+  - **Example Request**: 
+    ```http
+    PUT http://127.0.0.1:5000/api/users/671b703750c06c3a75325d32
+    ```
+    
+  - **Headers**:
+    ```http
+    Authorization: Bearer <your_access_token>
+    ```
+
+**DELTE** `http://127.0.0.1:5000/api/users/<user_id>`
+
+- **Authorization**: Bearer token is required for this request.
+  
+  - **Example Request**: 
+    ```http
+    DELETE http://127.0.0.1:5000/api/users/671b703750c06c3a75325d32
+    ```
+    
+  - **Headers**:
+    ```http
+    Authorization: Bearer <your_access_token>
+    ```
