@@ -85,7 +85,7 @@ The API will be running on http://localhost:5000. You can use tools like Postman
 **GET** `http://127.0.0.1:5000/api/users`
 
 - **Response**
-  ![GET /api/users/<user_id>](get_user.png)
+  ![GET /api/users/](get_user.png)
 
 **POST** `http://127.0.0.1:5000/api/users`
 
@@ -97,6 +97,8 @@ The API will be running on http://localhost:5000. You can use tools like Postman
       "email": "sasharma643@gmail.com"
     }
     ```
+- **Response**
+  ![POST /api/users/](post_user.png)
     
 **POST** `http://127.0.0.1:5000/api/login`
 
