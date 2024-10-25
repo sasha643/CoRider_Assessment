@@ -178,8 +178,7 @@ The application uses JWT for securing certain API endpoints.
    - **Response**:
        ```json
        {
-         "access_token": "your_access_token",
-         "refresh_token": "your_refresh_token"
+         "token": "your_access_token",
        }
        ```
 
