@@ -13,9 +13,6 @@ RESTful API for managing users, built with Flask and MongoDB. This API supports 
 - [API Endpoints](#api-endpoints)
 - [Authentication](#authentication)
 - [Caching](#caching)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
 
 ## Features
 
