@@ -59,6 +59,8 @@ Build and Run the Docker Container:
    
 ## API Endpoints
 
+The API will be running on http://localhost:5000. You can use tools like Postman or curl to test the endpoints.
+
 **Users**
 
 - GET /api/users:
