@@ -46,6 +46,7 @@ To set up the project locally, follow these steps:
    git clone https://github.com/sasha643/CoRider_Assessment.git
    cd CoRider_Assessment
    ```
+   
 ## Usage
 
 Build and Run the Docker Container:
@@ -55,3 +56,22 @@ Build and Run the Docker Container:
    ```bash
    docker-compose up --build
    ```
+   
+## API Endpoints
+
+**Users**
+
+- GET /api/users: Retrieve all users
+- GET /api/users/<user_id>: Retrieve a user by ID
+- POST /api/users: Create a new user
+- PUT /api/users/<user_id>: Update an existing user
+- DELETE /api/users/<user_id>: Delete a user by ID
+
+**Authentication**
+
+- POST /api/login: Obtain a JWT token for access to protected routes.
+
+1. **Use Docker Compose to build the application and start the services**:
+
+   ```bash
+   docker-compose up --build
