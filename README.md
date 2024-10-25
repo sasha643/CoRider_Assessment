@@ -10,8 +10,8 @@ RESTful API for managing users, built with Flask and MongoDB. This API supports 
 - [Usage](#usage)
 - [API Endpoints](#api-endpoints)
 - [API Testing with Postman](#api-testing-with-postman)
-- [Caching](#caching)
 - [JWT-Authentication](#jwt-authentication)
+- [Caching with redis](#caching-with-redis)
 
 ## Features
 
