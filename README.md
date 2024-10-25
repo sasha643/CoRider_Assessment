@@ -160,18 +160,21 @@ The API will be running on http://localhost:5000. You can use tools like Postman
 
 The application uses JWT for securing certain API endpoints.
 
-### How It Works:
-- Users can log in to receive an access token, which must be included in the Authorization header for any requests to protected endpoints.
+   ### How It Works:
+   - Users can log in to receive an access token, which must be included in the Authorization header for any requests to protected endpoints.
 
   - **Token Generation**:
+    
    - **Endpoint**: `POST /api/login`
    - **Request Payload**:
+     
        ```json
        {
          "username": "yourUsername",
          "password": "yourPassword"
        }
        ```
+       
    - **Response**:
        ```json
        {
@@ -180,14 +183,16 @@ The application uses JWT for securing certain API endpoints.
        }
        ```
 
-### Token Validity:
-- **Access Token**: Valid for **15 minutes**
-- **Refresh Token**: Valid for **7 days**
-
-### Protected Endpoints:
-The following endpoints require a Bearer token in the Authorization header:
-
-- **GET** `/api/users/<user_id>`
-- **PUT** `/api/users/<user_id>`
-- **DELETE** `/api/users/<user_id>`
+   **Token Generation**:
+   
+   - **Access Token**: Valid for **15 minutes**
+   - **Refresh Token**: Valid for **7 days**
+   
+   **Token Generation**:
+   
+   The following endpoints require a Bearer token in the Authorization header:
+   
+   - **GET** `/api/users/<user_id>`
+   - **PUT** `/api/users/<user_id>`
+   - **DELETE** `/api/users/<user_id>`
 
