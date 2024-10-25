@@ -183,12 +183,12 @@ The application uses JWT for securing certain API endpoints.
        }
        ```
 
-   **Token Generation**:
+   **Token Validity**:
    
    - **Access Token**: Valid for **15 minutes**
    - **Refresh Token**: Valid for **7 days**
    
-   **Token Generation**:
+   **Protected Endpoints**:
    
    The following endpoints require a Bearer token in the Authorization header:
    
