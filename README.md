@@ -170,8 +170,8 @@ The application uses JWT for securing certain API endpoints.
      
        ```json
        {
-         "username": "yourUsername",
-         "password": "yourPassword"
+         "email": "your-email",
+         "password": "your-password"
        }
        ```
        
