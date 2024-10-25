@@ -45,3 +45,11 @@ To set up the project locally, follow these steps:
    ```bash
    git clone https://github.com/sasha643/CoRider_Assessment.git
    cd CoRider_Assessment
+   ```
+## Usage
+
+Build and Run the Docker Container:
+
+```bash
+docker-compose up --build
+```
