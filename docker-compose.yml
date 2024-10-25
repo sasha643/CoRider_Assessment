@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  flask_app:
+    build: .
+    ports:
+      - "5000:5000"
+    depends_on:
+      - mongo_db
+
+  mongo_db:
+    image: mongo:latest
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_DATABASE: user_db
+
+  redis:
+    image: "redis:alpine"
+    ports:
+      - "6379:6379"
