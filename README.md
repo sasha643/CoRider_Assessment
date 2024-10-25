@@ -11,6 +11,7 @@ RESTful API for managing users, built with Flask and MongoDB. This API supports 
 - [API Endpoints](#api-endpoints)
 - [API Testing with Postman](#api-testing-with-postman)
 - [Caching](#caching)
+- [JWT-Authentication](#jwt-authentication)
 
 ## Features
 
@@ -153,3 +154,40 @@ The API will be running on http://localhost:5000. You can use tools like Postman
     ```
 - **Response**:
   ![DELETE /api/user/<user_id>/](delete_user.png)
+  
+
+## JWT Authentication
+
+The application uses JWT for securing certain API endpoints.
+
+### How It Works:
+- Users can log in to receive an access token, which must be included in the Authorization header for any requests to protected endpoints.
+
+  - **Token Generation**:
+   - **Endpoint**: `POST /api/login`
+   - **Request Payload**:
+       ```json
+       {
+         "username": "yourUsername",
+         "password": "yourPassword"
+       }
+       ```
+   - **Response**:
+       ```json
+       {
+         "access_token": "your_access_token",
+         "refresh_token": "your_refresh_token"
+       }
+       ```
+
+### Token Validity:
+- **Access Token**: Valid for **15 minutes**
+- **Refresh Token**: Valid for **7 days**
+
+### Protected Endpoints:
+The following endpoints require a Bearer token in the Authorization header:
+
+- **GET** `/api/users/<user_id>`
+- **PUT** `/api/users/<user_id>`
+- **DELETE** `/api/users/<user_id>`
+
