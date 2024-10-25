@@ -84,7 +84,7 @@ The API will be running on http://localhost:5000. You can use tools like Postman
 
 **GET** `http://127.0.0.1:5000/api/users`
 
-- **Response**
+- **Response**:
   ![GET /api/users/](get_user.png)
 
 **POST** `http://127.0.0.1:5000/api/users`
@@ -97,7 +97,7 @@ The API will be running on http://localhost:5000. You can use tools like Postman
       "email": "sasharma643@gmail.com"
     }
     ```
-- **Response**
+- **Response**:
   ![POST /api/users/](post_user.png)
     
 **POST** `http://127.0.0.1:5000/api/login`
@@ -109,6 +109,8 @@ The API will be running on http://localhost:5000. You can use tools like Postman
       "email": "sasharma643@gmail.com"
     }
     ```
+- **Response**:
+  ![POST /api/login/](jwt.png)
 
 **GET** `http://127.0.0.1:5000/api/users/<user_id>`
 
@@ -124,6 +126,9 @@ The API will be running on http://localhost:5000. You can use tools like Postman
     Authorization: Bearer <your_access_token>
     ```
 
+- **Response**:
+  ![GET /api/user/<user_id>/](get_user_on_id.png)
+
 **PUT** `http://127.0.0.1:5000/api/users/<user_id>`
 
 - **Authorization**: Bearer token is required for this request.
@@ -137,6 +142,8 @@ The API will be running on http://localhost:5000. You can use tools like Postman
     ```http
     Authorization: Bearer <your_access_token>
     ```
+- **Response**:
+  ![PUT /api/user/<user_id>/](put_user.png)
 
 **DELTE** `http://127.0.0.1:5000/api/users/<user_id>`
 
@@ -151,3 +158,5 @@ The API will be running on http://localhost:5000. You can use tools like Postman
     ```http
     Authorization: Bearer <your_access_token>
     ```
+- **Response**:
+  ![DELETE /api/user/<user_id>/](delete_user.png)
