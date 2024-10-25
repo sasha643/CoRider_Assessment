@@ -61,7 +61,7 @@ Build and Run the Docker Container:
 
 **Users**
 
-- GET /api/users: Retrieve all users
+- GET /api/users: <u>Retrieve all users</u>
 - GET /api/users/<user_id>: Retrieve a user by ID
 - POST /api/users: Create a new user
 - PUT /api/users/<user_id>: Update an existing user
