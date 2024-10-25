@@ -6,7 +6,6 @@ RESTful API for managing users, built with Flask and MongoDB. This API supports 
 
 - [Features](#features)
 - [Requirements](#Requirements)
-- [Technologies](#technologies)
 - [Installation](#installation)
 - [Usage](#usage)
 - [API Endpoints](#api-endpoints)
@@ -22,17 +21,14 @@ RESTful API for managing users, built with Flask and MongoDB. This API supports 
 
 ## Requirements
 
-Make sure you have the following installed:
-
-- [Docker](https://www.docker.com/get-started) (including Docker Compose)
-
-## Technologies
-
 - **Python 3.9**: Programming language
 - **Flask**: Web framework for building the API
 - **MongoDB**: NoSQL database for data storage
 - **Redis**: In-memory data structure store used for caching
 - **Docker**: Containerization for easy deployment
+  Make sure you have the following installed:
+
+- [Docker](https://www.docker.com/get-started) (including Docker Compose)
 
 ## Installation
 
