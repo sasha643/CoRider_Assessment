@@ -139,7 +139,7 @@ The API will be running on http://localhost:5000. You can use tools like Postman
 - **Response**:
   ![PUT /api/user/<user_id>/](put_user.png)
 
-**DELTE** `http://127.0.0.1:5000/api/users/<user_id>`
+**DELETE** `http://127.0.0.1:5000/api/users/<user_id>`
 
 - **Authorization**: Bearer token is required for this request.
   
