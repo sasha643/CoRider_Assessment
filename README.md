@@ -163,7 +163,7 @@ The application uses JWT for securing certain API endpoints.
    ### How It Works:
    - Users can log in to receive an access token, which must be included in the Authorization header for any requests to protected endpoints.
 
-  - **Token Generation**:
+   **Token Generation**:
     
    - **Endpoint**: `POST /api/login`
    - **Request Payload**:
