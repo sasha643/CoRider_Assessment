@@ -1,5 +1,3 @@
-![image](https://github.com/user-attachments/assets/48cb66d1-8df0-4705-9dd0-13100f114a01)# User Management API
-
 ![Python Version](https://img.shields.io/badge/python-3.9-blue) ![Flask Version](https://img.shields.io/badge/flask-2.0.3-orange)
 
 RESTful API for managing users, built with Flask and MongoDB. This API supports user creation, retrieval, updating, and deletion, along with JWT authentication and Redis caching for enhanced performance.
