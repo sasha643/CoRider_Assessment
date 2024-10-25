@@ -50,6 +50,8 @@ To set up the project locally, follow these steps:
 
 Build and Run the Docker Container:
 
+1. **Use Docker Compose to build the application and start the services**:
+
    ```bash
    docker-compose up --build
    ```
