@@ -70,8 +70,3 @@ Build and Run the Docker Container:
 **Authentication**
 
 - POST /api/login: Obtain a JWT token for access to protected routes.
-
-1. **Use Docker Compose to build the application and start the services**:
-
-   ```bash
-   docker-compose up --build
