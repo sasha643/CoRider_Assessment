@@ -163,7 +163,7 @@ The application uses JWT for securing certain API endpoints.
    ### How It Works:
    - Users can log in to receive an access token, which must be included in the Authorization header for any requests to protected endpoints.
 
-   **Token Generation**:
+   ### Token Generation:
     
    - **Endpoint**: `POST /api/login`
    - **Request Payload**:
@@ -183,12 +183,12 @@ The application uses JWT for securing certain API endpoints.
        }
        ```
 
-   **Token Validity**:
+   ### Token Validity:
    
    - **Access Token**: Valid for **15 minutes**
    - **Refresh Token**: Valid for **7 days**
    
-   **Protected Endpoints**:
+   ### Protected Endpoints:
    
    The following endpoints require a Bearer token in the Authorization header:
    
@@ -212,12 +212,12 @@ Caching is implemented using Redis to store user data temporarily, enhancing res
      
       - Remove cache entry on user updates or deletions.
    
-   **Caching Strategy**
+   ### Caching Strategy:
    
    - **Cache Key**: Each user's data is cached with their user ID.
    - **Expiration**: Cached data expires after **5 minutes**.
    
-   **Technical Improvements**
+   ### Technical Improvements:
    
    - **Performance**: Faster response times and reduced database queries.
    - **Scalability**: Shared Redis cache allows multiple app instances to scale efficiently.
