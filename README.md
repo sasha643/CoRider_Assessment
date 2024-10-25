@@ -196,3 +196,28 @@ The application uses JWT for securing certain API endpoints.
    - **PUT** `/api/users/<user_id>`
    - **DELETE** `/api/users/<user_id>`
 
+
+## Caching with Redis
+
+Caching is implemented using Redis to store user data temporarily, enhancing response times and reducing database load.
+
+   ### How It Works:
+   
+   - **GET User by ID**:
+     
+      - Check Redis for cached data.
+      - If not found, fetch from MongoDB and cache it for future requests.
+        
+   - **Cache Invalidation**:
+     
+      - Remove cache entry on user updates or deletions.
+   
+   **Caching Strategy**
+   
+   - **Cache Key**: Each user's data is cached with their user ID.
+   - **Expiration**: Cached data expires after **5 minutes**.
+   
+   **Technical Improvements**
+   
+   - **Performance**: Faster response times and reduced database queries.
+   - **Scalability**: Shared Redis cache allows multiple app instances to scale efficiently.
