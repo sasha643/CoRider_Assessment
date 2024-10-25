@@ -39,5 +39,5 @@ To set up the project locally, follow these steps:
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/yourusername/user-management-api.git
+   git clone https://github.com/sasha643/CoRider_Assessment.git
    cd user-management-api
