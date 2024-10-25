@@ -50,6 +50,6 @@ To set up the project locally, follow these steps:
 
 Build and Run the Docker Container:
 
-```bash
-docker-compose up --build
-```
+   ```bash
+   docker-compose up --build
+   ```
