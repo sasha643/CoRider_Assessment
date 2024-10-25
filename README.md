@@ -40,4 +40,4 @@ To set up the project locally, follow these steps:
 
    ```bash
    git clone https://github.com/sasha643/CoRider_Assessment.git
-   cd user-management-api
+   cd CoRider_Assessment
